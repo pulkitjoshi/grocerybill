@@ -1,0 +1,38 @@
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgb(237, 238, 245),rgb(96, 92, 100));
+         
+     
+ }
+
+ p#login_heading{
+                     /*color: red;*/
+                     font-size: 75px;
+                     font-weight: bold;
+                     font-family: magneto,sans-serif;
+                     text-align: center;
+                     background: -webkit-linear-gradient(rgba(10, 10, 10, 0), rgb(0, 0, 0));
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                 }
+ 
+ div#login_space{
+                     position: relative;
+                     top: 60px;
+                     left: 450px;
+                     font-size: 30px;
+                     font-weight: bold;
+
+                 }
+
+ #submit_button{
+                     position: relative;
+                     left:200px;
+                     size: 100px;
+
+ }
+
+ #submit_button:hover{
+                     background-color: #4CAF50; /* Green */
+                     color: white;
+ }

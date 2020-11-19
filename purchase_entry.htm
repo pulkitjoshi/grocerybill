@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Login</title>
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0"> 
+    <!--<meta http-equiv="Refresh" content="3">-->
+    <link type="text/css" rel="stylesheet" href="purchase_entry.css">
+    
+    
+    <script type='text/javascript' src='purchase_entry.js'>
+
+        
+            
+    </script>
+   
+    <style>
+        <!--
+           
+        -->
+    </style>
+
+    
+      
+    
+</head>
+
+<body onload="">
+    
+
+    <p id="logo">ACEME GROCERS</p>
+    <a href="login.htm" style="position: absolute;top:50px;left:1290px;color: white;font-weight: bold;font-size: 20px;">Logout</a>
+    <form name="data" id="data" >
+        &nbsp;&nbsp;Item Id : <textarea data-limit-rows="true" name="item_id" id="item_id" rows="1" cols="20" maxlength="4" placeholder="Enter Item Id" autofocus required></textarea>
+        <input type="button" id="button1" name="button" value="+" onclick="quick_update('+')" >
+        <input type="button" id="button1" name="button" value="-" onclick="quick_update('-')" >
+        <br><br>
+       
+        <input type="button" id="button" name="button" value="ADD/UPDATE" onclick="add('0')" >
+               
+        <input type="button" id="button" name="button" value="Delete" onclick="delete1()" >
+        
+        <br>
+        <br>
+        
+        <br><br><br><br>
+        <input type="checkbox" id="delivery" name="delivery" value="delivery">
+        <label for="vehicle1">Home Delivery</label><br><br>
+        Address:
+                <textarea name='address' id='address' rows='5' cols='50'></textarea>
+                <br><br>
+                
+        <input type='button' name='button' id='button' value='Generate Bill' onclick='openwin()'> 
+                
+        <input type='reset' name='button' id='button' value='New Entry' onClick="window.location.reload()">      
+              
+                
+    </form>
+
+    <div id="purchased_item">
+            <p id="list_heading">Purchased Item</p>
+            <table style="width:40%;" id="purchased_item_table" border="1px" align="center">
+                <tr>
+                <th>PID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                     <td colspan="4" style="text-align: right;">Sub Total</td> 
+                     <td style="text-align:center;"></td>
+                     
+                </tr>
+                <tr>
+                     <td colspan="4" style="text-align: right;">GST</td> 
+                     <td style="text-align:center;">5%</td>
+                </tr>
+                <tr>
+                     <td colspan="4" style="font-weight: bold;text-align: right;">Total</td> 
+                     <td style="text-align:center;font-weight: bold;"></td>
+                     
+                </tr>
+                    
+            </table>
+           
+    </div>
+    
+   
+</body>
+</html>
